@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle;
 
-use Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface\FeatureToggleInterface as FeatureToggleInterface;
-
 class FeatureToggle
 {
     private FeatureToggleInterface $featureToggleClient;

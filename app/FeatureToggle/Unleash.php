@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle;
 
-use Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface\FeatureToggleInterface;
 use Unleash\Client\Unleash as UnleashClient;
 use Unleash\Client\UnleashBuilder;
 
