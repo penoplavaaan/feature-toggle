@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Penoplavaan\FeatureToggle;
+namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle;
 
 use Illuminate\Support\Facades\Facade;
 

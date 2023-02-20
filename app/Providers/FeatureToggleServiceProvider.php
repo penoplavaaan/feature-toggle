@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Penoplavaan\Providers;
+namespace Penoplavaan\FeatureToggleWrapper\Providers;
 
-use Penoplavaan\FeatureToggle\FeatureToggle;
+use Penoplavaan\FeatureToggleWrapper\FeatureToggle\FeatureToggle;
 use Illuminate\Support\ServiceProvider;
 
 class FeatureToggleServiceProvider extends ServiceProvider

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Penoplavaan\FeatureToggle;
+namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle;
 
-use Penoplavaan\FeatureToggle\Interface\FeatureToggle;
+use Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface\FeatureToggle;
 use Unleash\Client\Unleash as UnleashClient;
 use Unleash\Client\UnleashBuilder;
 

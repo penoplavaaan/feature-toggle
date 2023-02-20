@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Penoplavaan\FeatureToggle\Interface;
+namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface;
 
 interface FeatureToggle
 {

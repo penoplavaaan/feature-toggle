@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Penoplavaan\FeatureToggle;
+namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle;
 
-use Penoplavaan\FeatureToggle\Interface\FeatureToggle as FeatureToggleInterface;
+use Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface\FeatureToggle as FeatureToggleInterface;
 
 class FeatureToggle
 {
