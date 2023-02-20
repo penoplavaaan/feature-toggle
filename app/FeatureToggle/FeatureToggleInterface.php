@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Penoplavaan\FeatureToggleWrapper\FeatureToggle\Interface;
 
-interface FeatureToggle
+interface FeatureToggleInterface
 {
     public function configure(): void;
 

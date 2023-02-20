@@ -14,11 +14,9 @@ class FeatureToggleServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
-        $this->app->bind(FeatureToggle::class, function () {
-            return new FeatureToggle();
-        });
+        $this->registerFeatureToggle();
     }
 
     /**
@@ -28,5 +26,12 @@ class FeatureToggleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+    }
+
+    public function registerFeatureToggle()
+    {
+        $this->app->bind(FeatureToggle::class, function () {
+            return new FeatureToggle();
+        });
     }
 }
