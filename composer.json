@@ -1,5 +1,5 @@
 {
-    "name": "penoplavaaan/feature-toggle",
+    "name": "petrovich/feature-toggle",
     "type": "package",
     "description": "Gitlab feature toggle support for Laravel",
     "license": "MIT",
