@@ -27,11 +27,21 @@ class Unleash implements FeatureToggleInterface
 
     public function isEnabled(string $feature): bool
     {
+        $readyToUseFeatureToggle = env('FEATURE_TOGGLE_SUPPORT', false);
+        if (!$readyToUseFeatureToggle){
+            return false;
+        }
+
         return $this->featureToggleClient->isEnabled($feature);
     }
 
     public function isDisabled(string $feature): bool
     {
+        $readyToUseFeatureToggle = env('FEATURE_TOGGLE_SUPPORT', false);
+        if (!$readyToUseFeatureToggle){
+            return true;
+        }
+
         return !$this->featureToggleClient->isEnabled($feature);
     }
 }

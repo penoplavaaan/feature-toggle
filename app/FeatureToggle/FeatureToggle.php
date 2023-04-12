@@ -10,6 +10,8 @@ class FeatureToggle
 
     public function __construct()
     {
+        $readyToUseFeatureToggle = env('FEATURE_TOGGLE_SUPPORT', false);
+
         /**
          * Place where concrete realization
          * of feature toggle service is being chosen.
@@ -22,7 +24,10 @@ class FeatureToggle
         $featureToggleClient = app(Unleash::class);
 
         $this->featureToggleClient = $featureToggleClient;
-        $this->featureToggleClient->configure();
+
+        if ($readyToUseFeatureToggle) {
+            $this->featureToggleClient->configure();
+        }
     }
 
     public function isEnabled(string $feature): bool
